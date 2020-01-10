@@ -1,0 +1,29 @@
+{
+  "name": "electron-todo-api",
+  "version": "1.0.0",
+  "description": "'electron todo api'",
+  "main": "server.js",
+  "scripts": {
+    "test": "working",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janakhpon/electron-todo-api.git"
+  },
+  "keywords": [
+    "electron",
+    "express"
+  ],
+  "author": "novae",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janakhpon/electron-todo-api/issues"
+  },
+  "homepage": "https://github.com/janakhpon/electron-todo-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.7.5",
+    "validator": "^12.1.0"
+  }
+}
