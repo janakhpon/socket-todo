@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 const db = require('./config/keys').mongoURI;
 
 //connect to MongoDB
-mongoose.connect(db, { useNewUrlParser: true }).then(() => {
+mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
   console.log(`MongoDB connected on ${db}`);
 }).catch(err => {
   console.log(`MongoDB connection error : ${err} on : ${db}`);
@@ -50,7 +50,7 @@ app.use('/api/task', task);
 //declare port
 port = process.env.PORT || 3000;
 const server = app.listen(port, () => {
-  console.log(`SERVER RUNNING ON PORT : ${port}`);
+  console.log(`🚀 ==> Server started on port http://localhost:${port}`);
 })
 
 
