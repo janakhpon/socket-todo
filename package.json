@@ -24,6 +24,6 @@
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^5.7.5",
-    "validator": "^9.4.1"
+    "validator": "^12.1.0"
   }
 }
