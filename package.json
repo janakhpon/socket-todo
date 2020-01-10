@@ -1,15 +1,21 @@
 {
-  "name": "electron-todo-api",
-  "version": "1.0.0",
-  "description": "'electron todo api'",
+  "name": "socket-todo",
+  "version": "2.0.0",
+  "description": "socket-todo",
+  "engines": {
+    "node": "13.2.0",
+    "yarn": "1.19.1",
+    "npm": "6.13.6"
+  },
   "main": "server.js",
   "scripts": {
     "test": "working",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/janakhpon/electron-todo-api.git"
+    "url": "git+https://github.com/janakhpon/socket-todo.git"
   },
   "keywords": [
     "electron",
@@ -18,12 +24,19 @@
   "author": "novae",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/janakhpon/electron-todo-api/issues"
+    "url": "https://github.com/janakhpon/socket-todo.git/issues"
   },
-  "homepage": "https://github.com/janakhpon/electron-todo-api#readme",
+  "homepage": "https://github.com/janakhpon/socket-todo.git#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
+    "express-rate-limit": "^5.0.0",
     "mongoose": "^5.7.5",
+    "mongoose-unique-validator": "^2.0.3",
+    "mongoose-validator": "^2.1.0",
+    "nodemon": "^2.0.2",
+    "socket.io": "^2.3.0",
+    "string-capitalize-name": "^1.0.3",
     "validator": "^12.1.0"
   }
 }
